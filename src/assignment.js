@@ -14,23 +14,39 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  let sumOfNumbers = 0;
+  for (let i = 0; i < arrayOfNumbers.length; i++) {
+    sumOfNumbers += arrayOfNumbers[i];
+  }
+  return sumOfNumbers;
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+
+assignment.sumOfNumbers = sumOfNumbers;
 
 /**
- * Challenge - 2
- * 
- * Count all even numbers within an array of numbers.
- * If you did Challenge - 2, remove the comment in the line just after this function
- * 
- * @param {Array} arrayOfNumbers the array containing even or non-even numbers
+ * Challenge - 2 
+ * Count all even numbers within an array of numbers,
+ * If you did challenge - 2, remove the comment in the line just after the function
+ *
+ * @param {Array} arrayOfNumbers the array scontaining even or non-even number
  * @returns number the count of even numbers
  */
+
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  let evenNum = 0;
+    // loop to read all the values in the array
+    for (let i = 0; i < arrayOfNumbers.length; i++) {
+        // checking if number is divisible by 2
+        if (arrayOfNumbers[i] % 2 === 0)
+            evenNum++;
+        else {
+          evenNum += 1;
+        }
+    }
+    return evenNum;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+
+assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
