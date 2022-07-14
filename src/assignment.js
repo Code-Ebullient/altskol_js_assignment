@@ -32,18 +32,16 @@ assignment.sumOfNumbers = sumOfNumbers;
  * @returns number the count of even numbers
  */
 
-function countEvenNumbers(arrayOfNumbers) {
+ function countEvenNumbers(arrayOfNumbers) {
   let evenNum = 0;
     // loop to read all the values in the array
     for (let i = 0; i < arrayOfNumbers.length; i++) {
-        // checking if number is divisible by 2
-        if (arrayOfNumbers[i] % 2 === 0)
-            evenNum++;
-        else {
-          evenNum += 1;
-        }
+    // checking if number is divisible by 2
+    if (arrayOfNumbers[i] % 2 === 0) {
+      evenNum++;
     }
-    return evenNum;
+  }
+  return evenNum;
 }
 
 assignment.countEvenNumbers = countEvenNumbers;
